@@ -73,7 +73,7 @@ BEGIN
             WHERE cliente_id = o.cliente_id;
          EXCEPTION
             WHEN NO_DATA_FOUND THEN
-               v_cliente_nombre := 'CLIENTE NO REGISTRADO';
+               v_cliente_nombre := 'DATO NO REGISTRADO';
             WHEN TOO_MANY_ROWS THEN
                v_cliente_nombre := 'ERROR: RUT DUPLICADO EN CLIENTE';
          END;
