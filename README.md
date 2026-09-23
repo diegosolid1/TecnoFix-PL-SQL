@@ -17,7 +17,7 @@ DECLARE
    v_repuesto   r_repuesto_rec;
 
    TYPE varray_descuentos IS VARRAY(2) OF NUMBER;
-   v_descuentos   varray_descuentos := varry_descuentos(0, 0);
+   v_descuentos   varray_descuentos := varray_descuentos(0, 0);
 
    CURSOR c_tecnicos IS
       SELECT tecnico_id, nombre, apellido
